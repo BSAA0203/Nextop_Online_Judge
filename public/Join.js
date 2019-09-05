@@ -9,19 +9,6 @@
     appId: "1:600733822228:web:1cc9343fdf7b802c"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  const txtEmail = document.getElementById('login_field');
-  const txtPass = document.getElementById('password');
-  const checkBtn = document.getElementById('commit');
-  const checkLink = document.getElementById('join');
-
-  checkLink.addEventListener('click', e => {
-    const email = txtEmail.value;
-    const pass = txtPass.value;
-    const auth = firebase.auth();
-
-    const promise = auth.signInWithEmailAndPassword(email, pass);
-    promise.catch(e => console.log(e.message));
-  });
+  var ss = firebase.initializeApp(firebaseConfig);
+  console.log(ss);
 }());
