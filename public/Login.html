@@ -34,33 +34,31 @@
     <main id="js-pjax-container" data-pjax-container>
 
       <div class="auth-form px-3" id="login">
-        <form action="" method="post">
-          <input name="utf8" type="hidden" value="&#x2713;" />
-          <input name="authenticity_token" type="hidden" value="kmGil2A9zcT/4aMRuyLbvMXVytQsbk7fZ2GH1+sh0zT9+TxiUh5R96iJNpRmRtVdwQvsYSXojWAFwQdw6+ABqA==" />
-          <div class="auth-form-header p-0">
-            <h1>Sign in to NexTop</h1>
-          </div>
+        <input name="utf8" type="hidden" value="&#x2713;" />
+        <input name="authenticity_token" type="hidden" value="kmGil2A9zcT/4aMRuyLbvMXVytQsbk7fZ2GH1+sh0zT9+TxiUh5R96iJNpRmRtVdwQvsYSXojWAFwQdw6+ABqA==" />
+        <div class="auth-form-header p-0">
+          <h1>Sign in to NexTop</h1>
+        </div>
 
-          <div class="auth-form-body mt-3">
+        <div class="auth-form-body mt-3">
 
-            <label for="login_field">
-              Email
-            </label>
-            <input type="email" name="user_id" id="login_field" class="form-control input-block" tabindex="1" autocapitalize="off" autocorrect="off" autofocus required />
+          <label for="login_field">
+            Email
+          </label>
+          <input type="email" id="login_field" class="form-control input-block" tabindex="1" autocapitalize="off" autocorrect="off" autofocus required />
 
-            <label for="password">
-              Password
-              <a href="Search.html" class="label-link">Forgot password?</a>
-            </label>
-            <input type="password" name="user_pass" id="password" class="form-control form-control input-block" tabindex="2" required />
+          <label for="password">
+            Password
+            <a href="Search.html" class="label-link">Forgot password?</a>
+          </label>
+          <input type="password" id="password" class="form-control form-control input-block" tabindex="2" required />
 
-            <input type="submit" id="commit" value="Sign in" tabindex="3" class="btn btn-primary btn-block" data-disable-with="Signing in…" />
-          </div>
-        </form>
+          <input type="submit" id="commit" value="Sign in" tabindex="3" class="btn btn-primary btn-block" data-disable-with="Signing in…" />
+        </div>
 
         <p class="create-account-callout mt-3">
           New to NexTop?
-          <a href="Join.js" id="join" data-ga-click="Sign in, switch to sign up">Create an account</a>
+          <a href="Join.html" data-ga-click="Sign in, switch to sign up">Create an account</a>
         </p>
       </div>
       <script src="test.js"></script>

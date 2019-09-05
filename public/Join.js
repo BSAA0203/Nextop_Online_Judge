@@ -13,8 +13,10 @@
 
   const txtEmail = document.getElementById('login_field');
   const txtPass = document.getElementById('password');
+  const txtName = document.getElementById('name');
+
   const checkBtn = document.getElementById('commit');
-  const checkLink = document.getElementById('join');
+  const checkJoin = document.getElementById('join');
 
   checkBtn.addEventListener('submit', e => {
     const email = txtEmail.value;
@@ -25,7 +27,7 @@
     promise.catch(e => console.log(e.message));
   });
 
-  checkLink.addEventListener('click', e => {
+  checkLink.addEventListener('submit', e => {
     const email = txtEmail.value;
     const pass = txtPass.value;
     const auth = firebase.auth();
