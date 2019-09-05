@@ -7,7 +7,7 @@
     storageBucket: "",
     messagingSenderId: "600733822228",
     appId: "1:600733822228:web:1cc9343fdf7b802c"
-  };firebase.initializeAPP(firebaseConfig);
+  };firebase.initializeApp(firebaseConfig);
 
   const txtEmail = document.getElementById('login_field');
   const txtPass = document.getElementById('password');
