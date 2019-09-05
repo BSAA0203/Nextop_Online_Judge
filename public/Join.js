@@ -9,6 +9,38 @@
     appId: "1:600733822228:web:1cc9343fdf7b802c"
   };
   // Initialize Firebase
-  var ss = firebase.initializeApp(firebaseConfig);
-  console.log(ss);
+  firebase.initializeApp(firebaseConfig);
+
+  const txtEmail = document.getElementById('login_field');
+  const txtPass = document.getElementById('password');
+  const checkBtn = document.getElementById('commit');
+  const checkLink = document.getElementById('join');
+
+  checkBtn.addEventListener('submit', e => {
+    const email = txtEmail.value;
+    const pass = txtPass.value;
+    const auth = firebase.auth();
+
+    const promise = auth.signInWithEmailAndPassword(email, pass);
+    promise.catch(e => console.log(e.message));
+  });
+
+  checkLink.addEventListener('click', e => {
+    const email = txtEmail.value;
+    const pass = txtPass.value;
+    const auth = firebase.auth();
+
+    const promise = auth.createUserWithEmailAndPassword(email, pass);
+    promise.catch(e => console.log(e.message));
+  });
+
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (firebaseUser) {
+      console.log(firebaseUser);
+      alert('가입을 환영합니다!');
+    } else {
+      console.log('not login');
+      alert('중복된 계정이 있습니다.')
+    }
+  });
 }());
