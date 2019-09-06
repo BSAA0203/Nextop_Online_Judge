@@ -10,30 +10,19 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  
 
   const txtEmail = document.getElementById('login_field');
   const txtPass = document.getElementById('password');
-  const txtName = document.getElementById('name');
 
-  const checkJoin = document.getElementById('join');
+  const checkBtn = document.getElementById('commit');
 
-  checkJoin.addEventListener('click', e => {
+  checkBtn.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPass.value;
     const auth = firebase.auth();
 
-    const promise = auth.createUserWithEmailAndPassword(email, pass);
+    const promise = auth.signInWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
-  });
-
-  firebase.auth().onAuthStateChanged(firebaseUser => {
-    if (firebaseUser) {
-      console.log(firebaseUser);
-      alert('가입을 환영합니다!');
-    } else {
-      console.log('not login');
-    }
   });
 
 }());
