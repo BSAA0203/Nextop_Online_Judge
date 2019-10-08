@@ -1,0 +1,7 @@
+SELECT
+ `id`,
+ `title`,
+ `content`,
+ `date`,
+ 'view'
+ FROM `My_DB`.`board` LIMIT 1000;

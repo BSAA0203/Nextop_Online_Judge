@@ -1,0 +1,8 @@
+SELECT
+ `memberSeq`,
+ `id`,
+ `pw`,
+ `name`,
+ `email`,
+ 'level'
+ FROM `My_DB`.`account_info` LIMIT 1000;
