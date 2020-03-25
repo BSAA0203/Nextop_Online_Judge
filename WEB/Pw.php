@@ -12,10 +12,9 @@ if(!isset($_SESSION['email'])) {
 <head>
   <meta charset="utf-8">
   <title>비밀번호 수정</title>
-  <link rel="shortcut icon" href="http://www.nextopedu.co.kr/default/img/_images/favicon.ico">
 </head>
 <div class="container clearfix width-full text-center">
-    <img src="http://www.nextopedu.co.kr/default/img/_images/logo.png" alt="넥스탑정보보안학원">
+<img src="https://user-images.githubusercontent.com/33346331/77515966-dbdfb680-6ebc-11ea-9f72-344d2b6cfed3.png" width="320px" height="300px" alt="샘플 로고">
 </div>
 
 <body>
