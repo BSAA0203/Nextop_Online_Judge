@@ -144,7 +144,6 @@ if(isset($_GET['searchColumn'])) {
       height: 1.9em
     }
   </style>
-  <link rel="shortcut icon" href="http://www.edu.co.kr/default/img/_images/favicon.ico">
 </head>
 
 <body topmargin=0 leftmargin=0 text=#464646>
